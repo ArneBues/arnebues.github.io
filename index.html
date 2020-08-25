@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<!-- saved from url=(0028)http://192.168.2.112:8080/#/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="http://192.168.2.112:8080/favicon.ico">
+    <title>frontend</title>
+  <link href="http://192.168.2.112:8080/1.99025672a6478649a51b.hot-update.js" rel="prefetch"><link href="./index_files/0.js.Download" rel="prefetch"><link href="./index_files/1.js.Download" rel="prefetch"><link href="http://192.168.2.112:8080/js/about.js" rel="prefetch"><link href="./index_files/app.js.Download" rel="preload" as="script"><link href="./index_files/chunk-vendors.js.Download" rel="preload" as="script"><style type="text/css">
+body {
+  background-color: #547392;
+}
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+}
+#nav {
+  padding: 30px;
+}
+#nav a {
+  font-weight: bold;
+  color: #2c3e50;
+}
+#nav a.router-link-exact-active {
+  color: #42b983;
+}
+</style><script charset="utf-8" src="./index_files/0.js.Download"></script><script charset="utf-8" src="./index_files/1.js.Download"></script><style type="text/css">@import url(https://fonts.googleapis.com/css?family=Lato:700);</style><style type="text/css">td[data-v-fbcc808c] {
+  font-size: 1.2em;
+  vertical-align: top;
+  border-top: 2px solid;
+  border-color: #2c3e50;
+  padding: 5px 0px 5px 1px;
+}
+table[data-v-fbcc808c] {
+  width: 100%;
+}
+.clearfix[data-v-fbcc808c]:before,
+.clearfix[data-v-fbcc808c]:after {
+  content: "";
+  display: table;
+}
+.clearfix[data-v-fbcc808c]:after {
+  clear: both;
+}
+*[data-v-fbcc808c],
+*[data-v-fbcc808c]:before,
+*[data-v-fbcc808c]:after {
+  box-sizing: border-box;
+}
+html[data-v-fbcc808c],
+body[data-v-fbcc808c] {
+  background: #ecf0f1;
+  color: #444;
+  font-family: "Lato", Tahoma, Geneva, sans-serif;
+  font-size: 16px;
+  padding: 10px;
+}
+.set-size[data-v-fbcc808c] {
+  font-size: 10em;
+  height: 200px;
+  overflow: auto;
+}
+.type[data-v-fbcc808c] {
+  font-size: 15pt;
+  text-align: center;
+  margin-top: 160px;
+}
+.charts-container[data-v-fbcc808c]:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.pie-wrapper[data-v-fbcc808c] {
+  height: 0.9em;
+  width: 0.9em;
+  float: left;
+  margin: 15px;
+  margin-left: 65px;
+  margin-right: 65px;
+  position: relative;
+  cursor: pointer;
+}
+.pie-wrapper .pie[data-v-fbcc808c] {
+  height: 100%;
+  width: 100%;
+  clip: rect(0, 0.9em, 0.9em, 0.45em);
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.pie-wrapper .pie .half-circle[data-v-fbcc808c] {
+  height: 100%;
+  width: 100%;
+  border: 0.09em solid #3498db;
+  border-radius: 50%;
+  clip: rect(0, 0.45em, 0.9em, 0);
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.pie-wrapper .label[data-v-fbcc808c] {
+  background: #34495e;
+  border-radius: 50%;
+  bottom: 0.36em;
+  color: #ecf0f1;
+  cursor: default;
+  display: block;
+  font-size: 0.225em;
+  left: 0.36em;
+  line-height: 2.52em;
+  position: absolute;
+  right: 0.36em;
+  text-align: center;
+  top: 0.36em;
+}
+.pie-wrapper .label .smaller[data-v-fbcc808c] {
+  color: #bdc3c7;
+  font-size: 0.45em;
+  padding-bottom: 20px;
+  vertical-align: super;
+}
+.pie-wrapper .shadow[data-v-fbcc808c] {
+  height: 100%;
+  width: 100%;
+  border: 0.09em solid #bdc3c7;
+  border-radius: 50%;
+}
+.pie-wrapper.style-2 .label[data-v-fbcc808c] {
+  background: none;
+  color: #7f8c8d;
+}
+.pie-wrapper.style-2 .label .smaller[data-v-fbcc808c] {
+  color: #bdc3c7;
+}
+.pie-wrapper.progress-30 .pie .half-circle[data-v-fbcc808c] {
+  border-color: red;
+}
+.pie-wrapper.progress-30 .pie .left-side[data-v-fbcc808c] {
+  transform: rotate(108deg);
+}
+.pie-wrapper.progress-30 .pie .right-side[data-v-fbcc808c] {
+  display: none;
+}
+.pie-wrapper.progress-60 .pie[data-v-fbcc808c] {
+  clip: rect(auto, auto, auto, auto);
+}
+.pie-wrapper.progress-60 .pie .half-circle[data-v-fbcc808c] {
+  border-color: #9b59b6;
+}
+.pie-wrapper.progress-60 .pie .left-side[data-v-fbcc808c] {
+  transform: rotate(216deg);
+}
+.pie-wrapper.progress-60 .pie .right-side[data-v-fbcc808c] {
+  transform: rotate(180deg);
+}
+.pie-wrapper.progress-90 .pie[data-v-fbcc808c] {
+  clip: rect(auto, auto, auto, auto);
+}
+.pie-wrapper.progress-90 .pie .half-circle[data-v-fbcc808c] {
+  border-color: #e67e22;
+}
+.pie-wrapper.progress-90 .pie .left-side[data-v-fbcc808c] {
+  transform: rotate(324deg);
+}
+.pie-wrapper.progress-90 .pie .right-side[data-v-fbcc808c] {
+  transform: rotate(180deg);
+}
+.pie-wrapper.progress-45 .pie .half-circle[data-v-fbcc808c] {
+  border-color: #1abc9c;
+}
+.pie-wrapper.progress-45 .pie .left-side[data-v-fbcc808c] {
+  transform: rotate(162deg);
+}
+.pie-wrapper.progress-45 .pie .right-side[data-v-fbcc808c] {
+  display: none;
+}
+.pie-wrapper.progress-75 .pie[data-v-fbcc808c] {
+  clip: rect(auto, auto, auto, auto);
+}
+.pie-wrapper.progress-75 .pie .half-circle[data-v-fbcc808c] {
+  border-color: #8e44ad;
+}
+.pie-wrapper.progress-75 .pie .left-side[data-v-fbcc808c] {
+  transform: rotate(270deg);
+}
+.pie-wrapper.progress-75 .pie .right-side[data-v-fbcc808c] {
+  transform: rotate(180deg);
+}
+.pie-wrapper.progress-95 .pie[data-v-fbcc808c] {
+  clip: rect(auto, auto, auto, auto);
+}
+.pie-wrapper.progress-95 .pie .half-circle[data-v-fbcc808c] {
+  border-color: #e74c3c;
+}
+.pie-wrapper.progress-95 .pie .left-side[data-v-fbcc808c] {
+  transform: rotate(342deg);
+}
+.pie-wrapper.progress-95 .pie .right-side[data-v-fbcc808c] {
+  transform: rotate(180deg);
+}
+.pie-wrapper.progress-100 .pie[data-v-fbcc808c] {
+  clip: rect(auto, auto, auto, auto);
+}
+.pie-wrapper.progress-100 .pie .half-circle[data-v-fbcc808c] {
+  border-color: #3cff00;
+}
+.pie-wrapper.progress-100 .pie .left-side[data-v-fbcc808c] {
+  transform: rotate(360deg);
+}
+.pie-wrapper.progress-100 .pie .right-side[data-v-fbcc808c] {
+  transform: rotate(180deg);
+}
+.pie-wrapper--solid[data-v-fbcc808c] {
+  border-radius: 50%;
+  overflow: hidden;
+}
+.pie-wrapper--solid[data-v-fbcc808c]:before {
+  border-radius: 0 100% 100% 0/50%;
+  content: "";
+  display: block;
+  height: 100%;
+  margin-left: 50%;
+  transform-origin: left;
+}
+.pie-wrapper--solid .label[data-v-fbcc808c] {
+  background: transparent;
+}
+.pie-wrapper--solid.progress-65[data-v-fbcc808c] {
+  background: linear-gradient(to right, #e67e22 50%, #34495e 50%);
+}
+.pie-wrapper--solid.progress-65[data-v-fbcc808c]:before {
+  background: #e67e22;
+  transform: rotate(126deg);
+}
+.pie-wrapper--solid.progress-25[data-v-fbcc808c] {
+  background: linear-gradient(to right, #9b59b6 50%, #34495e 50%);
+}
+.pie-wrapper--solid.progress-25[data-v-fbcc808c]:before {
+  background: #34495e;
+  transform: rotate(-270deg);
+}
+.pie-wrapper--solid.progress-88[data-v-fbcc808c] {
+  background: linear-gradient(to right, #3498db 50%, #34495e 50%);
+}
+.pie-wrapper--solid.progress-88[data-v-fbcc808c]:before {
+  background: #3498db;
+  transform: rotate(43.2deg);
+}</style><style type="text/css">.row[data-v-97ca65ee], .header[data-v-97ca65ee] {
+  display: flex;
+  vertical-align: top;
+  border-top: 2px solid;
+  border-color: #2c3e50;
+  padding: 5px 1px 5px 1px;
+}
+.level[data-v-97ca65ee] {
+  width: auto;
+  box-sizing: border-box;
+}
+.name[data-v-97ca65ee] {
+  width: 90%;
+}
+.status[data-v-97ca65ee] {
+  width: 100px;
+  margin: auto;
+}
+.status span[data-v-97ca65ee] {
+  margin-left: 25px;
+}
+.cell[data-v-97ca65ee] {
+  display: flex;
+}
+.publishers[data-v-97ca65ee] {
+  width: auto;
+  border: 0px solid;
+}
+.children[data-v-97ca65ee] {
+  margin-left: 20px;
+  border: 0px solid;
+}
+div[data-v-97ca65ee] {
+  margin: 1px 0px 1px 1px;
+}</style><style type="text/css">.material-design-icon {
+  display: inline-flex;
+  align-self: center;
+  position: relative;
+  height: 1em;
+  width: 1em;
+}
+.material-design-icon > .material-design-icon__svg {
+  height: 1em;
+  width: 1em;
+  fill: currentColor;
+  position: absolute;
+  bottom: -0.125em;
+}
+</style><style type="text/css">.row[data-v-3535c2ba], .header[data-v-3535c2ba] {
+  display: flex;
+  vertical-align: top;
+  border-top: 2px solid;
+  border-color: #2c3e50;
+  padding: 5px 1px 5px 1px;
+}
+.level[data-v-3535c2ba] {
+  width: auto;
+  box-sizing: border-box;
+}
+.name[data-v-3535c2ba] {
+  width: 90%;
+}
+.status[data-v-3535c2ba] {
+  width: 100px;
+  margin: auto;
+}
+.status span[data-v-3535c2ba] {
+  margin-left: 25px;
+}
+.cell[data-v-3535c2ba] {
+  display: flex;
+}
+.publishers[data-v-3535c2ba] {
+  width: auto;
+  border: 0px solid;
+}
+.children[data-v-3535c2ba] {
+  margin-left: 20px;
+  border: 0px solid;
+}
+div[data-v-3535c2ba] {
+  margin: 1px 0px 1px 1px;
+}</style><style type="text/css">.row[data-v-ffdc079e], .header[data-v-ffdc079e] {
+  display: flex;
+  vertical-align: top;
+  border-top: 2px solid;
+  border-color: #2c3e50;
+  padding: 5px 1px 5px 1px;
+}
+.level[data-v-ffdc079e] {
+  width: auto;
+  box-sizing: border-box;
+}
+.name[data-v-ffdc079e] {
+  width: 90%;
+}
+.status[data-v-ffdc079e] {
+  width: 100px;
+  margin: auto;
+}
+.status span[data-v-ffdc079e] {
+  margin-left: 25px;
+}
+.cell[data-v-ffdc079e] {
+  display: flex;
+}
+.publishers[data-v-ffdc079e] {
+  width: auto;
+  border: 0px solid;
+}
+.children[data-v-ffdc079e] {
+  margin-left: 20px;
+  border: 0px solid;
+}
+div[data-v-ffdc079e] {
+  margin: 1px 0px 1px 1px;
+}</style><style type="text/css">.container {
+  display: flex;
+  max-width: 85%;
+  margin: auto;
+  flex-wrap: wrap;
+}
+.news {
+  background-color: lightgrey;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 25%;
+  margin: 10px;
+}
+.functiontest {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 90.2%;
+  margin: 10px;
+  background-color: lightgrey;
+}
+.publishers {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 64%;
+  margin: 10px;
+  background-color: lightgrey;
+}</style><script charset="utf-8" src="./index_files/app.bbef1063a9561d7c2f04.hot-update.js.Download"></script><script charset="utf-8" src="./index_files/app.7a2126b0a59ceddc17dc.hot-update.js.Download"></script><script charset="utf-8" src="./index_files/app.09bee97c37d6093edac3.hot-update.js.Download"></script></head>
+  <body>
+    <noscript>
+      <strong>We're sorry but frontend doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"><div class="container"><div class="functiontest"><div data-v-fbcc808c=""><h1 data-v-fbcc808c=""> Funktionstest </h1><div data-v-fbcc808c="" class="clearfix"><div data-v-fbcc808c="" class="set-size charts-container"><div data-v-fbcc808c="" class="pie-wrapper progress-100"><span data-v-fbcc808c="" class="label">100<span data-v-fbcc808c="" class="smaller">%</span></span><div data-v-fbcc808c="" class="pie"><div data-v-fbcc808c="" class="left-side half-circle"></div><div data-v-fbcc808c="" class="right-side half-circle"></div></div><p data-v-fbcc808c="" class="type">Bücher</p></div><div data-v-fbcc808c="" class="pie-wrapper progress-100"><span data-v-fbcc808c="" class="label">100<span data-v-fbcc808c="" class="smaller">%</span></span><div data-v-fbcc808c="" class="pie"><div data-v-fbcc808c="" class="left-side half-circle"></div><div data-v-fbcc808c="" class="right-side half-circle"></div></div><p data-v-fbcc808c="" class="type">Zeitschrifen</p></div><div data-v-fbcc808c="" class="pie-wrapper progress-100"><span data-v-fbcc808c="" class="label">100<span data-v-fbcc808c="" class="smaller">%</span></span><div data-v-fbcc808c="" class="pie"><div data-v-fbcc808c="" class="left-side half-circle"></div><div data-v-fbcc808c="" class="right-side half-circle"></div></div><p data-v-fbcc808c="" class="type">Webseiten</p></div><div data-v-fbcc808c="" class="pie-wrapper progress-90"><span data-v-fbcc808c="" class="label">80<span data-v-fbcc808c="" class="smaller">%</span></span><div data-v-fbcc808c="" class="pie"><div data-v-fbcc808c="" class="left-side half-circle"></div><div data-v-fbcc808c="" class="right-side half-circle"></div></div><p data-v-fbcc808c="" class="type">Quellcode</p></div><div data-v-fbcc808c="" class="pie-wrapper progress-30"><span data-v-fbcc808c="" class="label">30<span data-v-fbcc808c="" class="smaller">%</span></span><div data-v-fbcc808c="" class="pie"><div data-v-fbcc808c="" class="left-side half-circle"></div><div data-v-fbcc808c="" class="right-side half-circle"></div></div><p data-v-fbcc808c="" class="type">Dateiformate</p></div></div></div><!----><!----><!----><!----><!----></div></div><div class="news"><div data-v-293a9583="" style="margin: 10px;"><h1 data-v-293a9583=""> Aktuelle Meldungen</h1><div data-v-293a9583=""><h2 data-v-293a9583="">Ausfall</h2><p data-v-293a9583="">Es häufen sich die Meldungen, dass das System nicht zur Verfügung steht. Die UDE hat mit dem Hersteller Kontakt aufgenommen…</p></div><hr data-v-293a9583=""> <div data-v-293a9583=""><h2 data-v-293a9583="">Ausfall</h2><p data-v-293a9583="">Es häufen sich die Meldungen, dass das System nicht zur Verfügung steht. Die UDE hat mit dem Hersteller Kontakt aufgenommen…</p></div><hr data-v-293a9583=""> <div data-v-293a9583=""><h2 data-v-293a9583="">Ausfall</h2><p data-v-293a9583="">Es häufen sich die Meldungen, dass das System nicht zur Verfügung steht. Die UDE hat mit dem Hersteller Kontakt aufgenommen…</p></div><hr data-v-293a9583=""> <div data-v-293a9583=""><h2 data-v-293a9583="">Ausfall</h2><p data-v-293a9583="">Es häufen sich die Meldungen, dass das System nicht zur Verfügung steht. Die UDE hat mit dem Hersteller Kontakt aufgenommen…</p></div><hr data-v-293a9583=""></div></div><div class="publishers"><div data-v-ffdc079e="" style="margin: 3px;"><h1 data-v-ffdc079e=""> Geprüfter Korpus </h1><div data-v-ffdc079e="" id="publishers" class="publishers"><div data-v-ffdc079e="" class="header"><div data-v-ffdc079e="" class="level"></div><div data-v-ffdc079e="" class="name">Quelle</div><div data-v-ffdc079e="" class="status">Status</div></div><div data-v-3535c2ba="" data-v-ffdc079e=""><div data-v-3535c2ba="" class="row"><div data-v-3535c2ba="" class="level"><!----><span data-v-3535c2ba="" aria-label="Minus Box icon" role="img" class="material-design-icon minus-box-icon"><svg data-v-3535c2ba="" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="material-design-icon__svg"><path data-v-3535c2ba="" d="M17,13H7V11H17M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z"><title data-v-3535c2ba="">Minus Box icon</title></path></svg></span></div><div data-v-3535c2ba="" class="name">Bücher</div><div data-v-3535c2ba="" class="status"> 8 / 12 </div></div><div data-v-3535c2ba="" class="children"><div data-v-3535c2ba=""><div data-v-3535c2ba="" class="row"><div data-v-3535c2ba="" class="level"><span data-v-3535c2ba="" aria-label="Plus Box icon" role="img" class="material-design-icon plus-box-icon"><svg data-v-3535c2ba="" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="material-design-icon__svg"><path data-v-3535c2ba="" d="M17,13H13V17H11V13H7V11H11V7H13V11H17M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z"><title data-v-3535c2ba="">Plus Box icon</title></path></svg></span><!----></div><div data-v-3535c2ba="" class="name">Springer</div><div data-v-3535c2ba="" class="status"> 4 / 6 </div></div><!----></div><div data-v-3535c2ba=""><div data-v-3535c2ba="" class="row"><div data-v-3535c2ba="" class="level"><span data-v-3535c2ba="" aria-label="Plus Box icon" role="img" class="material-design-icon plus-box-icon"><svg data-v-3535c2ba="" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="material-design-icon__svg"><path data-v-3535c2ba="" d="M17,13H13V17H11V13H7V11H11V7H13V11H17M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z"><title data-v-3535c2ba="">Plus Box icon</title></path></svg></span><!----></div><div data-v-3535c2ba="" class="name">Google Books</div><div data-v-3535c2ba="" class="status"> 4 / 6 </div></div><!----></div></div></div><div data-v-3535c2ba="" data-v-ffdc079e=""><div data-v-3535c2ba="" class="row"><div data-v-3535c2ba="" class="level"><!----><span data-v-3535c2ba="" aria-label="Minus Box icon" role="img" class="material-design-icon minus-box-icon"><svg data-v-3535c2ba="" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="material-design-icon__svg"><path data-v-3535c2ba="" d="M17,13H7V11H17M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z"><title data-v-3535c2ba="">Minus Box icon</title></path></svg></span></div><div data-v-3535c2ba="" class="name">Zeitschriften</div><div data-v-3535c2ba="" class="status"> 8 / 12 </div></div><div data-v-3535c2ba="" class="children"><div data-v-3535c2ba=""><div data-v-3535c2ba="" class="row"><div data-v-3535c2ba="" class="level"><span data-v-3535c2ba="" aria-label="Plus Box icon" role="img" class="material-design-icon plus-box-icon"><svg data-v-3535c2ba="" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="material-design-icon__svg"><path data-v-3535c2ba="" d="M17,13H13V17H11V13H7V11H11V7H13V11H17M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z"><title data-v-3535c2ba="">Plus Box icon</title></path></svg></span><!----></div><div data-v-3535c2ba="" class="name">Springer</div><div data-v-3535c2ba="" class="status"> 4 / 6 </div></div><!----></div><div data-v-3535c2ba=""><div data-v-3535c2ba="" class="row"><div data-v-3535c2ba="" class="level"><span data-v-3535c2ba="" aria-label="Plus Box icon" role="img" class="material-design-icon plus-box-icon"><svg data-v-3535c2ba="" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="material-design-icon__svg"><path data-v-3535c2ba="" d="M17,13H13V17H11V13H7V11H11V7H13V11H17M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z"><title data-v-3535c2ba="">Plus Box icon</title></path></svg></span><!----></div><div data-v-3535c2ba="" class="name">Elsevier</div><div data-v-3535c2ba="" class="status"> 4 / 6 </div></div><!----></div><div data-v-3535c2ba=""><div data-v-3535c2ba="" class="row"><div data-v-3535c2ba="" class="level"><span data-v-3535c2ba="" aria-label="Plus Box icon" role="img" class="material-design-icon plus-box-icon"><svg data-v-3535c2ba="" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="material-design-icon__svg"><path data-v-3535c2ba="" d="M17,13H13V17H11V13H7V11H11V7H13V11H17M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z"><title data-v-3535c2ba="">Plus Box icon</title></path></svg></span><!----></div><div data-v-3535c2ba="" class="name">IEEE</div><div data-v-3535c2ba="" class="status"> 4 / 6 </div></div><!----></div></div></div><div data-v-3535c2ba="" data-v-ffdc079e=""><div data-v-3535c2ba="" class="row"><div data-v-3535c2ba="" class="level"><!----><span data-v-3535c2ba="" aria-label="Minus Box icon" role="img" class="material-design-icon minus-box-icon"><svg data-v-3535c2ba="" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="material-design-icon__svg"><path data-v-3535c2ba="" d="M17,13H7V11H17M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z"><title data-v-3535c2ba="">Minus Box icon</title></path></svg></span></div><div data-v-3535c2ba="" class="name">Webseiten</div><div data-v-3535c2ba="" class="status"> 8 / 12 </div></div><div data-v-3535c2ba="" class="children"><div data-v-97ca65ee="" data-v-3535c2ba="" class="row"><div data-v-97ca65ee="" class="level"></div><div data-v-97ca65ee="" class="name">Wikipedia</div><div data-v-97ca65ee="" class="status"><!----><span data-v-97ca65ee="" aria-label="Alert icon" role="img" class="material-design-icon alert-icon"><svg data-v-97ca65ee="" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="material-design-icon__svg"><path data-v-97ca65ee="" d="M13,14H11V10H13M13,18H11V16H13M1,21H23L12,2L1,21Z"><title data-v-97ca65ee="">Alert icon</title></path></svg></span></div></div><div data-v-97ca65ee="" data-v-3535c2ba="" class="row"><div data-v-97ca65ee="" class="level"></div><div data-v-97ca65ee="" class="name">Spiegel</div><div data-v-97ca65ee="" class="status"><!----><span data-v-97ca65ee="" aria-label="Alert icon" role="img" class="material-design-icon alert-icon"><svg data-v-97ca65ee="" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="material-design-icon__svg"><path data-v-97ca65ee="" d="M13,14H11V10H13M13,18H11V16H13M1,21H23L12,2L1,21Z"><title data-v-97ca65ee="">Alert icon</title></path></svg></span></div></div><div data-v-97ca65ee="" data-v-3535c2ba="" class="row"><div data-v-97ca65ee="" class="level"></div><div data-v-97ca65ee="" class="name">Gartner Glossary</div><div data-v-97ca65ee="" class="status"><span data-v-97ca65ee="" aria-label="Checkbox Marked Circle icon" role="img" class="material-design-icon checkbox-marked-circle-icon"><svg data-v-97ca65ee="" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="material-design-icon__svg"><path data-v-97ca65ee="" d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"><title data-v-97ca65ee="">Checkbox Marked Circle icon</title></path></svg></span><!----></div></div></div></div><div data-v-3535c2ba="" data-v-ffdc079e=""><div data-v-3535c2ba="" class="row"><div data-v-3535c2ba="" class="level"><!----><span data-v-3535c2ba="" aria-label="Minus Box icon" role="img" class="material-design-icon minus-box-icon"><svg data-v-3535c2ba="" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="material-design-icon__svg"><path data-v-3535c2ba="" d="M17,13H7V11H17M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3Z"><title data-v-3535c2ba="">Minus Box icon</title></path></svg></span></div><div data-v-3535c2ba="" class="name">Quellcode</div><div data-v-3535c2ba="" class="status"> 8 / 12 </div></div><div data-v-3535c2ba="" class="children"><div data-v-97ca65ee="" data-v-3535c2ba="" class="row"><div data-v-97ca65ee="" class="level"></div><div data-v-97ca65ee="" class="name">Github</div><div data-v-97ca65ee="" class="status"><!----><span data-v-97ca65ee="" aria-label="Alert icon" role="img" class="material-design-icon alert-icon"><svg data-v-97ca65ee="" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="material-design-icon__svg"><path data-v-97ca65ee="" d="M13,14H11V10H13M13,18H11V16H13M1,21H23L12,2L1,21Z"><title data-v-97ca65ee="">Alert icon</title></path></svg></span></div></div><div data-v-97ca65ee="" data-v-3535c2ba="" class="row"><div data-v-97ca65ee="" class="level"></div><div data-v-97ca65ee="" class="name">Gitlab</div><div data-v-97ca65ee="" class="status"><!----><span data-v-97ca65ee="" aria-label="Alert icon" role="img" class="material-design-icon alert-icon"><svg data-v-97ca65ee="" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="material-design-icon__svg"><path data-v-97ca65ee="" d="M13,14H11V10H13M13,18H11V16H13M1,21H23L12,2L1,21Z"><title data-v-97ca65ee="">Alert icon</title></path></svg></span></div></div><div data-v-97ca65ee="" data-v-3535c2ba="" class="row"><div data-v-97ca65ee="" class="level"></div><div data-v-97ca65ee="" class="name">Bitbucket</div><div data-v-97ca65ee="" class="status"><span data-v-97ca65ee="" aria-label="Checkbox Marked Circle icon" role="img" class="material-design-icon checkbox-marked-circle-icon"><svg data-v-97ca65ee="" fill="currentColor" width="24" height="24" viewBox="0 0 24 24" class="material-design-icon__svg"><path data-v-97ca65ee="" d="M10,17L5,12L6.41,10.58L10,14.17L17.59,6.58L19,8M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"><title data-v-97ca65ee="">Checkbox Marked Circle icon</title></path></svg></span><!----></div></div></div></div></div></div></div></div></div>
+    <!-- built files will be auto injected -->
+  <script type="text/javascript" src="./index_files/chunk-vendors.js.Download"></script><script type="text/javascript" src="./index_files/app.js.Download"></script>
+
+</body></html>
